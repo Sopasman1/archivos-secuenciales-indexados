@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBoxBrand = new ComboBox();
+            cmbBrand = new ComboBox();
             txtName = new TextBox();
             txtPrice = new TextBox();
             btnRegister = new Button();
             btnLoad = new Button();
             btnDelete = new Button();
             btnSearch = new Button();
-            listBoxGames = new ListBox();
+            lstGames = new ListBox();
             txtSearch = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            lblStatus = new Label();
             SuspendLayout();
             // 
-            // comboBoxBrand
+            // cmbBrand
             // 
-            comboBoxBrand.FormattingEnabled = true;
-            comboBoxBrand.Location = new Point(12, 12);
-            comboBoxBrand.Name = "comboBoxBrand";
-            comboBoxBrand.Size = new Size(121, 23);
-            comboBoxBrand.TabIndex = 0;
+            cmbBrand.FormattingEnabled = true;
+            cmbBrand.Location = new Point(12, 12);
+            cmbBrand.Name = "cmbBrand";
+            cmbBrand.Size = new Size(121, 23);
+            cmbBrand.TabIndex = 0;
             // 
             // txtName
             // 
@@ -104,14 +105,14 @@
             btnSearch.UseVisualStyleBackColor = true;
             btnSearch.Click += btnSearch_Click;
             // 
-            // listBoxGames
+            // lstGames
             // 
-            listBoxGames.FormattingEnabled = true;
-            listBoxGames.ItemHeight = 15;
-            listBoxGames.Location = new Point(291, 77);
-            listBoxGames.Name = "listBoxGames";
-            listBoxGames.Size = new Size(396, 334);
-            listBoxGames.TabIndex = 7;
+            lstGames.FormattingEnabled = true;
+            lstGames.ItemHeight = 15;
+            lstGames.Location = new Point(291, 77);
+            lstGames.Name = "lstGames";
+            lstGames.Size = new Size(396, 334);
+            lstGames.TabIndex = 7;
             // 
             // txtSearch
             // 
@@ -147,23 +148,32 @@
             label3.TabIndex = 11;
             label3.Text = "Price";
             // 
+            // lblStatus
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Location = new Point(512, 422);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(0, 15);
+            lblStatus.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblStatus);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtSearch);
-            Controls.Add(listBoxGames);
+            Controls.Add(lstGames);
             Controls.Add(btnSearch);
             Controls.Add(btnDelete);
             Controls.Add(btnLoad);
             Controls.Add(btnRegister);
             Controls.Add(txtPrice);
             Controls.Add(txtName);
-            Controls.Add(comboBoxBrand);
+            Controls.Add(cmbBrand);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -172,17 +182,18 @@
 
         #endregion
 
-        private ComboBox comboBoxBrand;
+        private ComboBox cmbBrand;
         private TextBox txtName;
         private TextBox txtPrice;
         private Button btnRegister;
         private Button btnLoad;
         private Button btnDelete;
         private Button btnSearch;
-        private ListBox listBoxGames;
+        private ListBox lstGames;
         private TextBox txtSearch;
         private Label label1;
         private Label label2;
         private Label label3;
+        private Label lblStatus;
     }
 }
